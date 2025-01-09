@@ -1,26 +1,68 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "field:nom_de_lhabitude",
  "creation": "2025-01-09 12:40:40.658832",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_0jas"
+  "habitude_section",
+  "nom_de_lhabitude",
+  "fr\u00e9quence",
+  "column_break_ylje",
+  "statut",
+  "date_de_cr\u00e9ation",
+  "date_de_compl\u00e9tion"
  ],
  "fields": [
   {
-   "fieldname": "section_break_0jas",
-   "fieldtype": "Section Break"
+   "fieldname": "habitude_section",
+   "fieldtype": "Section Break",
+   "label": "Habitude"
+  },
+  {
+   "fieldname": "nom_de_lhabitude",
+   "fieldtype": "Data",
+   "label": "Nom de l'habitude",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fr\u00e9quence",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fr\u00e9quence",
+   "options": "Quotidien\nHebdomadaire\nMensuel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "statut",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "\u00c0 faire\nEn cours\nCompl\u00e9t\u00e9"
+  },
+  {
+   "fieldname": "column_break_ylje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_de_cr\u00e9ation",
+   "fieldtype": "Datetime",
+   "label": "Date de cr\u00e9ation"
+  },
+  {
+   "fieldname": "date_de_compl\u00e9tion",
+   "fieldtype": "Datetime",
+   "label": "Date de compl\u00e9tion"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-09 12:40:52.267878",
+ "modified": "2025-01-09 17:44:31.566658",
  "modified_by": "Administrator",
  "module": "Habitudes",
  "name": "Habitudes",
- "naming_rule": "Set by user",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
