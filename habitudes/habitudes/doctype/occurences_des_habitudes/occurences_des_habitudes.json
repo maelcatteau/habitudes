@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:habitudes",
+ "creation": "2025-01-09 17:54:11.558157",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xtos",
+  "habitudes",
+  "date",
+  "column_break_kgrm",
+  "statut"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xtos",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "habitudes",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Habitudes",
+   "options": "Habitudes",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kgrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statut",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "\u00c0 faire\nEn cours\nCompl\u00e9t\u00e9",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-09 17:58:46.282090",
+ "modified_by": "Administrator",
+ "module": "Habitudes",
+ "name": "Occurences des habitudes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

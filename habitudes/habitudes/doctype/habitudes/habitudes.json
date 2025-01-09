@@ -8,11 +8,11 @@
  "field_order": [
   "habitude_section",
   "nom_de_lhabitude",
-  "fr\u00e9quence",
+  "description_de_lhabitude",
   "column_break_ylje",
-  "statut",
-  "date_de_cr\u00e9ation",
-  "date_de_compl\u00e9tion"
+  "fr\u00e9quence",
+  "active",
+  "date_de_cr\u00e9ation"
  ],
  "fields": [
   {
@@ -36,12 +36,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "statut",
-   "fieldtype": "Select",
-   "label": "Statut",
-   "options": "\u00c0 faire\nEn cours\nCompl\u00e9t\u00e9"
-  },
-  {
    "fieldname": "column_break_ylje",
    "fieldtype": "Column Break"
   },
@@ -51,14 +45,20 @@
    "label": "Date de cr\u00e9ation"
   },
   {
-   "fieldname": "date_de_compl\u00e9tion",
-   "fieldtype": "Datetime",
-   "label": "Date de compl\u00e9tion"
+   "fieldname": "description_de_lhabitude",
+   "fieldtype": "Long Text",
+   "label": "Description de l'habitude"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-09 17:44:31.566658",
+ "modified": "2025-01-09 17:53:38.964365",
  "modified_by": "Administrator",
  "module": "Habitudes",
  "name": "Habitudes",
